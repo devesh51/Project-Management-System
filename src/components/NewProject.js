@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  addProject,
-  setProjectDetails,
-  setSelectedProjectId,
-} from "../utils/projectSlice";
+import { addProject, setProjectDetails } from "../utils/projectSlice";
 import Input from "./input";
 import Modal from "./Modal";
 import { useDispatch, useSelector } from "react-redux";
@@ -11,7 +7,6 @@ import {
   toggleProjectAddpage,
   toggleProjectEditPage,
 } from "../utils/pageviewSlice";
-import ShowSelectedProject from "./ShowSelectedProject";
 import NoProjectSelected from "./NoProjectSelected";
 
 const NewProject = () => {
